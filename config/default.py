@@ -12,9 +12,9 @@ def pre_config(o):
         o.MYSQL_HOST = '127.0.0.1'
         o.MYSQL_PORT = 3306
         o.MYSQL_USER = 'root'
-        o.MYSQL_PASSWD = 'rstfsgbcedh'
-        o.MYSQL_DB = 'work_notepad'
-        o.MEMCACHED_ADDR = ( '127.0.0.1:11211', )
+        o.MYSQL_PASSWD = ''
+        o.MYSQL_DB = ''
+        o.MEMCACHED_ADDR = ( '127.0.0.1:xxx', )
  
     else:
         o.DEBUG = False

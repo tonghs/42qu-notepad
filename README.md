@@ -59,7 +59,8 @@ easy_install -U 42qucc
 ```
 
 
-### About
+About
+-----
 
 诞生于 首届Python中国黑客马拉松 比赛 , 获三等奖
 
@@ -82,7 +83,8 @@ easy_install -U 42qucc
 创作的初衷是为想学习python网站开发的新人提供一个演示项目
 
 
-### API 文档
+API 文档
+--------
 
 
 * 录入笔记 : POST

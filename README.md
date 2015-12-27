@@ -1,7 +1,8 @@
-是在线的随手贴 
---------------
+在线的随手贴 
+===========
 
-### 使用
+使用
+----
 
 可以随意的自定义网址来 自己记录 或与 朋友分享 文字 , 比如 :
 
@@ -13,7 +14,9 @@ http://42qu.cc/test
 
 建议您以自己的用户名作为网址前缀 , 比如 :
 
-```http://42qu.cc/zsp/test```
+```
+http://42qu.cc/zsp/test
+```
 
 编辑内容的页面 , 每隔三秒会自动保存一次
 
@@ -21,27 +24,39 @@ http://42qu.cc/test
 
 还有实用的命令行小工具 , Linux / Mac 用户可用以下指令安装
 
-```easy_install -U 42qucc```
+```
+easy_install -U 42qucc
+```
 
-粘贴文件 到 随机网址
+* 粘贴文件 到 随机网址
 
-```42qucc < hi.txt```
+```
+42qucc < hi.txt
+```
 
- 粘贴文件 到 自定义网址 ( http://42qu.cc/test )
+* 粘贴文件 到 自定义网址 ( http://42qu.cc/test )
 
-```42qucc test < hi.txt```
+```
+42qucc test < hi.txt
+```
 
-列出当前目录下的文件 , 并粘贴到 42qu.cc
+*列出当前目录下的文件 , 并粘贴到 42qu.cc
 
-```ls | 42qucc```
+```
+ls | 42qucc
+```
 
-手工输入 , 在命令行中输入内容 ; 按 Ctrl + D , 然后回车 , 结束输入
+* 手工输入 , 在命令行中输入内容 ; 按 Ctrl + D , 然后回车 , 结束输入
 
-```42qucc ```
+```
+42qucc
+```
 
-下载文件
+* 下载文件
 
-```42qucc http://42qu.cc/hi > hi.txt```
+```
+42qucc http://42qu.cc/hi > hi.txt
+```
 
 
 ### About

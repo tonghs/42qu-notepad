@@ -106,7 +106,9 @@ http://42qu.cc/:api/txt/test1234
 
 * 读取笔记 : GET
 
-```http://42qu.cc/:api/txt/test1234```
+```
+http://42qu.cc/:api/txt/test1234
+```
 
 其中 , test1234 为自定义的网址
 

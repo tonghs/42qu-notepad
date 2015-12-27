@@ -1,0 +1,22 @@
+<%!
+from model.account import user_mail
+%>
+<%inherit file="/_nav.html" />
+<%def name="html_title()">42qu . 记事本</%def>
+<%def name="html_head()">
+<link rel="stylesheet" href="${css.history}" type="text/css">
+</%def>
+<div class="main_wrap c">
+<div id="note-list">
+
+</div>
+<div class="section paging">
+<p class="time back"></p>
+<p>
+</p>
+</div>
+<div class="page"></div>
+</div>
+<div class="foot"><a href="/" class="add"></a><span class="add_mail">${user_mail(current_user_id)}</span></div>
+<script src="${js.paging}"></script>
+<script src="${js.history}"></script>

@@ -1,0 +1,23 @@
+Metadata-Version: 1.0
+Name: 42qucc
+Version: 0.0.4
+Summary: 
+    A paste tool in CLI
+        
+Home-page: http://p.pe.vc/:help
+Author: 42qu.com 42区
+Author-email: admin@42qu.com
+License: UNKNOWN
+Description: 
+              the following is the usage:
+              1.Paste file to 42qu.cc
+                hi@Mars ~$ 42qucc < foo.txt            
+                http://42qu.cc/xa47qt471        
+              2.Custom url           
+                hi@Mars ~$ 42qucc hi < foo.txt          
+                http://42qu.cc/hi        
+              3.Save web page to local file          
+                hi@Mars ~$ 42qucc  http://42qu.cc/xa47qt471  >  foo.txt
+            
+            
+Platform: UNKNOWN

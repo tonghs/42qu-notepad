@@ -1,0 +1,18 @@
+worker: tornado
+handlers:
+- url: /static
+  static_dir: static
+- url: /build
+  static_dir: build
+- url: /css
+  static_dir: css
+- url: /js
+  static_dir: js
+- url: /favicon\.ico
+  static_dir: /favicon.ico
+handle:
+- compress:  if ( out_header["Content-Length"]>=1000 ) compress
+- compress:  if ( out_header["Content-type"]=="text/css" ) compress
+- compress:  if ( out_header["Content-type"]=="text/javascript" ) compress
+- compress:  if ( out_header["Content-type"]=="text/plain" ) compress
+- compress:  if ( out_header["Content-type"]=="text/html" ) compress

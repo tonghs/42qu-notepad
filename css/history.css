@@ -1,0 +1,139 @@
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+body{
+padding:59px 50px;
+font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size:16px;
+}
+strong{
+color:#111;
+font-weight:700;
+font-size:15px;
+}
+.time strong{
+font-size:18px;
+color:#999;
+font-weight:normal;
+}
+.time span{
+margin-top:3px; 
+font-size:12px;
+color:#999;
+display:block;
+}
+#nav{
+overflow:hidden;
+margin:0px;
+padding-top:18px;
+padding-bottom:58px;
+}
+#nav li{
+float:left;
+list-style:none outside none;
+margin:0;
+margin-right:64px;
+color:#666;
+cursor:pointer;
+}
+#nav-new a{
+font-size:18px;
+font-family: Georgia, Times, "Times New Roman", serif;
+}
+#nav  #nav-new {
+margin-top:-2px;
+}
+.section,#main{
+    border-left: 1px solid #E5E5E5;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    padding: 0 250px 34px 78px;
+    position: relative;
+    width: 540px;
+}
+.time{
+    background: none repeat scroll 0 0 #FFFFFF;
+    left: -33px;
+    line-height: 1.2;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 66px;
+    line-height:1.1;
+    top:0;
+}
+.time a{
+display:block;
+height:32px;
+width:32px;
+cursor:pointer;
+}
+.content{
+    padding-top:9px;
+    overflow:hidden;
+}
+.more{
+color:#0099d2;
+font-size:16px;
+text-decoration:none;
+display:block;
+margin-top:34px;
+}
+.more:hover{
+    color:#d20
+}
+.more span{
+padding-left:3px;
+}
+.page{
+margin:-16px auto 0;
+width:540px;
+padding:0 250px 0 49px;
+}
+.back{
+cursor:pointer;
+}
+#note_list_loading{
+width:160px;
+height:24px;
+background:url(/css/img/list-load.gif) no-repeat center center #fff;
+}
+#nav-his strong{
+font-size:16px;
+}
+#nav-signout a,#nav-help a,.nav a{
+color:#666;
+}
+
+.nav .time,.paging .time{
+margin:3px 0 0 15px;
+width:36px;
+height:34px;
+background:url(/css/img/logo.png) no-repeat center center #fff;
+}
+
+
+.add{
+width:32px;
+vertical-align:-12px;
+height:32px;
+margin-left:-3px;
+background:url(/css/img/window_app_list_add.png) no-repeat center center #fff;
+margin-top:64px;
+display:inline-block;
+}
+.add_mail{
+color:#666;
+margin-left:27px;
+}
+.foot{
+padding:18px 250px 64px 50px;
+margin:auto;
+width:540px;
+}

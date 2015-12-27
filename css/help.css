@@ -1,0 +1,19 @@
+.url {
+    padding:16px;
+    border:1px dotted #ddd;
+    margin:32px 0;
+}
+#main a{
+    color:#333;
+    border-bottom:1px dotted #999;
+    padding-bottom:1px;
+}
+#main p{
+    line-height:34px;
+}
+#nav-help strong{
+    font-size:16px;
+}
+.mt27{
+margin-top:27px
+}

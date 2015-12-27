@@ -1,0 +1,32 @@
+<%inherit file="/_base.html" />
+<%def name="html_title()">42qu . 记事本</%def>
+<%def name="html_head()">
+<link rel="stylesheet" href="${css.history}" type="text/css">
+</%def>
+<div class="section nav">
+<p class="time"><a href='/'></a></p>
+<%
+nav = [('42qu.cc', '/', 'new')]
+url = request.uri
+if current_user:
+    nav.append(('存档', '/:', 'his'))
+nav.extend([
+    ('帮助', '/:help', 'help'),
+])
+%>
+<ul id="nav">
+% for name, link, cla in nav:
+<% 
+if link == url:
+    name = '<strong>' + name + '</strong>'
+%>
+<li id="nav-${cla}"><a href="${link}">${name|n}</a></li>
+% endfor
+## % if current_user:
+## <li id="nav-signout"><a href="/:auth/logout?${_xsrf}">退出</a></li>
+## % else:
+## <li id="nav-signout"><a href="/:auth/oauth">登录</a></li>
+## % endif
+</ul>
+</div>
+${next.body()}

@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+42qucc.egg-info/PKG-INFO
+42qucc.egg-info/SOURCES.txt
+42qucc.egg-info/dependency_links.txt
+42qucc.egg-info/entry_points.txt
+42qucc.egg-info/not-zip-safe
+42qucc.egg-info/requires.txt
+42qucc.egg-info/top_level.txt
+cc42/__init__.py
+cc42/cc42.py

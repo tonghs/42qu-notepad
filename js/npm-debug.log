@@ -1,0 +1,451 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/bin/npm', 'install', 'js2coffee' ]
+info using npm@1.1.18
+info using node@v0.7.8
+verbose config file /home/work/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /lib64/node_modules/npm/npmrc
+verbose caching /home/work/42qu-notepad/node_modules/js2coffee/package.json
+verbose cache add [ 'js2coffee', null ]
+silly cache add: name, spec, args [ undefined, 'js2coffee', [ 'js2coffee', null ] ]
+verbose parsed url { pathname: 'js2coffee', path: 'js2coffee', href: 'js2coffee' }
+verbose addNamed [ 'js2coffee', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'js2coffee', '', false ]
+verbose raw, before any munging js2coffee
+verbose url resolving [ 'https://registry.npmjs.org/', './js2coffee' ]
+verbose url resolved https://registry.npmjs.org/js2coffee
+http GET https://registry.npmjs.org/js2coffee
+http 200 https://registry.npmjs.org/js2coffee
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"3CRQ8TPP98DLW35ARQSWE7KWZ"',
+silly get cb     date: 'Sat, 27 Oct 2012 15:37:25 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '9176' } ]
+silly name, range, hasData 2 [ 'js2coffee', '', true ]
+silly versions [ 'js2coffee',
+silly versions   [ '0.0.1',
+silly versions     '0.0.2',
+silly versions     '0.0.3',
+silly versions     '0.0.4',
+silly versions     '0.0.5',
+silly versions     '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.1.3',
+silly versions     '0.2.0' ] ]
+verbose bin dist [ null,
+verbose bin dist   { shasum: 'f5c9fe97866d782a37095471116858a967561cc0',
+verbose bin dist     tarball: 'http://registry.npmjs.org/js2coffee/-/js2coffee-0.2.0.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/js2coffee/-/js2coffee-0.2.0.tgz',
+verbose addRemoteTarball   'f5c9fe97866d782a37095471116858a967561cc0' ]
+verbose fetch to /tmp/npm-1351352414446/1351352414446-0.5087103003170341/tmp.tgz
+http GET https://registry.npmjs.org/js2coffee/-/js2coffee-0.2.0.tgz
+http 200 https://registry.npmjs.org/js2coffee/-/js2coffee-0.2.0.tgz
+silly updated sha bytes 40960
+silly updated sha bytes 10240
+info shasum f5c9fe97866d782a37095471116858a967561cc0
+info shasum /tmp/npm-1351352414446/1351352414446-0.5087103003170341/tmp.tgz
+verbose unpack /tmp/npm-1351352414446/1351352414446-0.5087103003170341/tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry .gitignore
+silly extracting entry Cakefile
+silly extracting entry HISTORY.md
+silly extracting entry package.json
+silly extracting entry README.md
+silly extracting entry bin/js2coffee
+silly extracting entry bin/js2coffee-debug
+silly extracting entry docs/docco.css
+silly extracting entry docs/js2coffee.html
+silly extracting entry lib/command.coffee
+silly extracting entry lib/helpers.coffee
+silly extracting entry lib/js2coffee.coffee
+silly extracting entry lib/narcissus_packed.js
+silly extracting entry lib/node_ext.coffee
+silly extracting entry lib/optparse.coffee
+silly extracting entry test/empty_blocks.coffee
+silly extracting entry test/empty_blocks.js
+silly extracting entry test/test.coffee
+silly extracting entry test/pending/comments.coffee
+silly extracting entry test/pending/comments.js
+silly extracting entry test/pending/reserved_words.js
+silly extracting entry test/pending/reserved_words.coffee
+silly extracting entry test/pending/reserved_words.txt
+silly extracting entry test/pending/single_line_else.coffee
+silly extracting entry test/pending/single_line_else.js
+silly extracting entry test/features/anon_invocation.coffee
+silly extracting entry test/features/anon_invocation.js
+silly extracting entry test/features/array_literals.coffee
+silly extracting entry test/features/array_literals.js
+silly extracting entry test/features/assign.coffee
+silly extracting entry test/features/assign.js
+silly extracting entry test/features/assignment.coffee
+silly extracting entry test/features/assignment.js
+silly extracting entry test/features/assignment_condition.coffee
+silly extracting entry test/features/assignment_condition.js
+silly extracting entry test/features/bitwise_shift.coffee
+silly extracting entry test/features/bitwise_shift.js
+silly extracting entry test/features/blank_lines.coffee
+silly extracting entry test/features/blank_lines.js
+silly extracting entry test/features/blank_regex.coffee
+silly extracting entry test/features/blank_regex.js
+silly extracting entry test/features/call_statement.js
+silly extracting entry test/features/crlf.coffee
+silly extracting entry test/features/crlf.js
+silly extracting entry test/features/call_statement.coffee
+silly extracting entry test/features/debugger.coffee
+silly extracting entry test/features/debugger.js
+silly extracting entry test/features/delete.js
+silly extracting entry test/features/delete.coffee
+silly extracting entry test/features/destructuring_assignment.coffee
+silly extracting entry test/features/destructuring_assignment.js
+silly extracting entry test/features/destructuring_in_functions.coffee
+silly extracting entry test/features/destructuring_in_functions.js
+silly extracting entry test/features/do.coffee
+silly extracting entry test/features/do.js
+silly extracting entry test/features/dont_unreserve_property_accessors.coffee
+silly extracting entry test/features/dont_unreserve_property_accessors.js
+silly extracting entry test/features/empty_catch.js
+silly extracting entry test/features/empty_catch.coffee
+silly extracting entry test/features/empty_function.coffee
+silly extracting entry test/features/empty_function.js
+silly extracting entry test/features/empty_function_bodies.coffee
+silly extracting entry test/features/empty_function_bodies.js
+silly extracting entry test/features/empty_semicolon.coffee
+silly extracting entry test/features/empty_semicolon.js
+silly extracting entry test/features/equal_regex.coffee
+silly extracting entry test/features/equal_regex.js
+silly extracting entry test/features/equal_regex.txt
+silly extracting entry test/features/existence.coffee
+silly extracting entry test/features/existence.js
+silly extracting entry test/features/floating_point_numbers.coffee
+silly extracting entry test/features/floating_point_numbers.js
+silly extracting entry test/features/for.coffee
+silly extracting entry test/features/for.js
+silly extracting entry test/features/for_in.coffee
+silly extracting entry test/features/for_in.js
+silly extracting entry test/features/function_chaining.coffee
+silly extracting entry test/features/function_chaining.js
+silly extracting entry test/features/function_order.coffee
+silly extracting entry test/features/function_order.js
+silly extracting entry test/features/function_with_keyword.coffee
+silly extracting entry test/features/function_with_keyword.js
+silly extracting entry test/features/hash.js
+silly extracting entry test/features/hash.txt
+silly extracting entry test/features/if_return.coffee
+silly extracting entry test/features/if_return.js
+silly extracting entry test/features/increment_decrement.coffee
+silly extracting entry test/features/increment_decrement.js
+silly extracting entry test/features/index.coffee
+silly extracting entry test/features/index.js
+silly extracting entry test/features/instanceof.coffee
+silly extracting entry test/features/instanceof.js
+silly extracting entry test/features/invocation_object_literal_first.coffee
+silly extracting entry test/features/invocation_object_literal_first.js
+silly extracting entry test/features/jquery_wrapper.coffee
+silly extracting entry test/features/jquery_wrapper.js
+silly extracting entry test/features/loop.coffee
+silly extracting entry test/features/loop.js
+silly extracting entry test/features/not.coffee
+silly extracting entry test/features/not.js
+silly extracting entry test/features/not_not.coffee
+silly extracting entry test/features/not_not.js
+silly extracting entry test/features/object_literal_at_index.coffee
+silly extracting entry test/features/object_literal_at_index.js
+silly extracting entry test/features/object_literal_return.coffee
+silly extracting entry test/features/object_literal_return.js
+silly extracting entry test/features/object_literal_single.coffee
+silly extracting entry test/features/object_literal_single.js
+silly extracting entry test/features/object_literal_with_function.coffee
+silly extracting entry test/features/object_literal_with_function.js
+silly extracting entry test/features/object_literals.coffee
+silly extracting entry test/features/object_literals.js
+silly extracting entry test/features/or.coffee
+silly extracting entry test/features/or.js
+silly extracting entry test/features/parenthesized_new.coffee
+silly extracting entry test/features/parenthesized_new.js
+silly extracting entry test/features/percent_d.coffee
+silly extracting entry test/features/percent_d.js
+silly extracting entry test/features/prototype.coffee
+silly extracting entry test/features/prototype.js
+silly extracting entry test/features/reserve.coffee
+silly extracting entry test/features/reserve.js
+silly extracting entry test/features/return_function.coffee
+silly extracting entry test/features/return_function.js
+silly extracting entry test/features/return_in_if.coffee
+silly extracting entry test/features/return_in_if.js
+silly extracting entry test/features/return_object.coffee
+silly extracting entry test/features/return_object.js
+silly extracting entry test/features/return_object_parenthesize.coffee
+silly extracting entry test/features/return_object_parenthesize.js
+silly extracting entry test/features/returns.coffee
+silly extracting entry test/features/returns.js
+silly extracting entry test/features/settimeout.coffee
+silly extracting entry test/features/settimeout.js
+silly extracting entry test/features/simple_addition.coffee
+silly extracting entry test/features/single_line_if.coffee
+silly extracting entry test/features/simple_addition.js
+silly extracting entry test/features/single_line_if.js
+silly extracting entry test/features/single_line_while.coffee
+silly extracting entry test/features/single_line_while.js
+silly extracting entry test/features/single_return.coffee
+silly extracting entry test/features/single_return.js
+silly extracting entry test/features/switch.coffee
+silly extracting entry test/features/switch.js
+silly extracting entry test/features/ternary.coffee
+silly extracting entry test/features/ternary.js
+silly extracting entry test/features/this_attribute.coffee
+silly extracting entry test/features/this_attribute.js
+silly extracting entry test/features/this_keyword.coffee
+silly extracting entry test/features/this_keyword.js
+silly extracting entry test/features/throw.coffee
+silly extracting entry test/features/throw.js
+silly extracting entry test/features/unary.coffee
+silly extracting entry test/features/unary.js
+silly extracting entry test/features/undefined.coffee
+silly extracting entry test/features/undefined.js
+silly extracting entry test/features/unusual_identifiers.coffee
+silly extracting entry test/features/unusual_identifiers.js
+silly extracting entry test/features/var.coffee
+silly extracting entry test/features/var.js
+silly extracting entry test/features/while.coffee
+silly extracting entry test/features/while.js
+silly extracting entry test/features/hash.coffee
+verbose caching /tmp/npm-1351352414446/1351352414446-0.5087103003170341/package/package.json
+verbose loadDefaults js2coffee@0.2.0
+verbose from cache /tmp/npm-1351352414446/1351352414446-0.5087103003170341/package/package.json
+verbose tar.pack [ '/home/work/.npm/js2coffee/0.2.0/package.tgz',
+verbose tar.pack   '/tmp/npm-1351352414446/1351352414446-0.5087103003170341/package' ]
+verbose tarball /home/work/.npm/js2coffee/0.2.0/package.tgz
+verbose folder /tmp/npm-1351352414446/1351352414446-0.5087103003170341/package
+verbose unpack /home/work/.npm/js2coffee/0.2.0/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry HISTORY.md
+silly extracting entry Cakefile
+silly extracting entry lib/narcissus_packed.js
+silly extracting entry lib/helpers.coffee
+silly extracting entry lib/command.coffee
+silly extracting entry lib/optparse.coffee
+silly extracting entry lib/node_ext.coffee
+silly extracting entry lib/js2coffee.coffee
+silly extracting entry bin/js2coffee-debug
+silly extracting entry bin/js2coffee
+silly extracting entry test/empty_blocks.js
+silly extracting entry test/features/object_literal_single.js
+silly extracting entry test/features/object_literal_with_function.js
+silly extracting entry test/features/empty_function.js
+silly extracting entry test/features/anon_invocation.js
+silly extracting entry test/features/function_order.js
+silly extracting entry test/features/destructuring_assignment.js
+silly extracting entry test/features/object_literal_at_index.js
+silly extracting entry test/features/throw.js
+silly extracting entry test/features/instanceof.js
+silly extracting entry test/features/for.js
+silly extracting entry test/features/this_keyword.js
+silly extracting entry test/features/unusual_identifiers.js
+silly extracting entry test/features/existence.js
+silly extracting entry test/features/loop.js
+silly extracting entry test/features/not_not.js
+silly extracting entry test/features/ternary.js
+silly extracting entry test/features/function_with_keyword.js
+silly extracting entry test/features/return_object.js
+silly extracting entry test/features/delete.js
+silly extracting entry test/features/object_literals.js
+silly extracting entry test/features/return_object_parenthesize.js
+silly extracting entry test/features/empty_function_bodies.js
+silly extracting entry test/features/prototype.js
+silly extracting entry test/features/increment_decrement.js
+silly extracting entry test/features/assignment.js
+silly extracting entry test/features/empty_semicolon.js
+silly extracting entry test/features/unary.js
+silly extracting entry test/features/function_chaining.js
+silly extracting entry test/features/dont_unreserve_property_accessors.js
+silly extracting entry test/features/returns.js
+silly extracting entry test/features/single_return.js
+silly extracting entry test/features/return_in_if.js
+silly extracting entry test/features/array_literals.js
+silly extracting entry test/features/this_attribute.js
+silly extracting entry test/features/settimeout.js
+silly extracting entry test/features/jquery_wrapper.js
+silly extracting entry test/features/single_line_while.js
+silly extracting entry test/features/reserve.js
+silly extracting entry test/features/parenthesized_new.js
+silly extracting entry test/features/debugger.js
+silly extracting entry test/features/simple_addition.js
+silly extracting entry test/features/hash.js
+silly extracting entry test/features/bitwise_shift.js
+silly extracting entry test/features/switch.js
+silly extracting entry test/features/or.js
+silly extracting entry test/features/not.js
+silly extracting entry test/features/undefined.js
+silly extracting entry test/features/while.js
+silly extracting entry test/features/percent_d.js
+silly extracting entry test/features/floating_point_numbers.js
+silly extracting entry test/features/index.js
+silly extracting entry test/features/blank_regex.js
+silly extracting entry test/features/for_in.js
+silly extracting entry test/features/equal_regex.js
+silly extracting entry test/features/empty_catch.js
+silly extracting entry test/features/single_line_if.js
+silly extracting entry test/features/crlf.js
+silly extracting entry test/features/return_function.js
+silly extracting entry test/features/if_return.js
+silly extracting entry test/features/object_literal_return.js
+silly extracting entry test/features/do.js
+silly extracting entry test/features/var.js
+silly extracting entry test/features/blank_lines.js
+silly extracting entry test/features/invocation_object_literal_first.js
+silly extracting entry test/features/assignment_condition.js
+silly extracting entry test/features/call_statement.js
+silly extracting entry test/features/assign.js
+silly extracting entry test/features/destructuring_in_functions.js
+silly extracting entry test/features/blank_regex.coffee
+silly extracting entry test/features/crlf.coffee
+silly extracting entry test/features/assignment_condition.coffee
+silly extracting entry test/features/unary.coffee
+silly extracting entry test/features/dont_unreserve_property_accessors.coffee
+silly extracting entry test/features/jquery_wrapper.coffee
+silly extracting entry test/features/index.coffee
+silly extracting entry test/features/return_function.coffee
+silly extracting entry test/features/unusual_identifiers.coffee
+silly extracting entry test/features/object_literals.coffee
+silly extracting entry test/features/destructuring_in_functions.coffee
+silly extracting entry test/features/increment_decrement.coffee
+silly extracting entry test/features/delete.coffee
+silly extracting entry test/features/function_order.coffee
+silly extracting entry test/features/loop.coffee
+silly extracting entry test/features/destructuring_assignment.coffee
+silly extracting entry test/features/blank_lines.coffee
+silly extracting entry test/features/this_attribute.coffee
+silly extracting entry test/features/this_keyword.coffee
+silly extracting entry test/features/reserve.coffee
+silly extracting entry test/features/do.coffee
+silly extracting entry test/features/empty_semicolon.coffee
+silly extracting entry test/features/not_not.coffee
+silly extracting entry test/features/single_line_while.coffee
+silly extracting entry test/features/assign.coffee
+silly extracting entry test/features/ternary.coffee
+silly extracting entry test/features/parenthesized_new.coffee
+silly extracting entry test/features/throw.coffee
+silly extracting entry test/features/if_return.coffee
+silly extracting entry test/features/object_literal_return.coffee
+silly extracting entry test/features/for_in.coffee
+silly extracting entry test/features/settimeout.coffee
+silly extracting entry test/features/return_object.coffee
+silly extracting entry test/features/anon_invocation.coffee
+silly extracting entry test/features/while.coffee
+silly extracting entry test/features/returns.coffee
+silly extracting entry test/features/array_literals.coffee
+silly extracting entry test/features/object_literal_single.coffee
+silly extracting entry test/features/var.coffee
+silly extracting entry test/features/bitwise_shift.coffee
+silly extracting entry test/features/function_chaining.coffee
+silly extracting entry test/features/or.coffee
+silly extracting entry test/features/instanceof.coffee
+silly extracting entry test/features/return_object_parenthesize.coffee
+silly extracting entry test/features/existence.coffee
+silly extracting entry test/features/return_in_if.coffee
+silly extracting entry test/features/call_statement.coffee
+silly extracting entry test/features/single_line_if.coffee
+silly extracting entry test/features/invocation_object_literal_first.coffee
+silly extracting entry test/features/object_literal_with_function.coffee
+silly extracting entry test/features/single_return.coffee
+silly extracting entry test/features/object_literal_at_index.coffee
+silly extracting entry test/features/percent_d.coffee
+silly extracting entry test/features/empty_function.coffee
+silly extracting entry test/features/prototype.coffee
+silly extracting entry test/features/undefined.coffee
+silly extracting entry test/features/not.coffee
+silly extracting entry test/features/floating_point_numbers.coffee
+silly extracting entry test/features/simple_addition.coffee
+silly extracting entry test/features/empty_catch.coffee
+silly extracting entry test/features/switch.coffee
+silly extracting entry test/features/for.coffee
+silly extracting entry test/features/equal_regex.coffee
+silly extracting entry test/features/empty_function_bodies.coffee
+silly extracting entry test/features/debugger.coffee
+silly extracting entry test/features/assignment.coffee
+silly extracting entry test/features/hash.coffee
+silly extracting entry test/features/function_with_keyword.coffee
+silly extracting entry test/empty_blocks.coffee
+silly extracting entry test/test.coffee
+silly extracting entry test/pending/reserved_words.js
+silly extracting entry test/pending/single_line_else.js
+silly extracting entry test/pending/comments.js
+silly extracting entry test/pending/single_line_else.coffee
+silly extracting entry test/pending/comments.coffee
+silly extracting entry test/pending/reserved_words.coffee
+verbose caching /home/work/.npm/js2coffee/0.2.0/package/package.json
+verbose loadDefaults js2coffee@0.2.0
+silly updated sha bytes 40699
+info shasum 67d04d6a8793be9b7e0a29cc75453fe6ef505944
+info shasum /home/work/.npm/js2coffee/0.2.0/package.tgz
+verbose from cache /home/work/.npm/js2coffee/0.2.0/package/package.json
+verbose chmod /home/work/.npm/js2coffee/0.2.0/package.tgz 644
+verbose chown [ '/home/work/.npm/js2coffee/0.2.0/package.tgz', 1001, 1001 ]
+silly resolved [ { name: 'js2coffee',
+silly resolved     description: 'JavaScript to CoffeeScript compiler',
+silly resolved     keywords: [ 'javascript', 'coffeescript', 'language', 'compiler' ],
+silly resolved     author: { name: 'Rico Sta. Cruz' },
+silly resolved     version: '0.2.0',
+silly resolved     engines: { node: '>=0.4.0' },
+silly resolved     directories: { lib: './lib' },
+silly resolved     main: './lib/js2coffee',
+silly resolved     bin: { js2coffee: './bin/js2coffee' },
+silly resolved     homepage: 'http://ricostacruz.com/js2coffee',
+silly resolved     repository: { type: 'git', url: 'git://github.com/rstacruz/js2coffee.git' },
+silly resolved     devDependencies: { glob: '>= 0.0.1' },
+silly resolved     dependencies: 
+silly resolved      { underscore: '>= 0.0.1',
+silly resolved        'coffee-script': '>= 1.1.0',
+silly resolved        file: '>= 0.1.0' },
+silly resolved     scripts: { test: 'cake test' },
+silly resolved     _id: 'js2coffee@0.2.0',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.18',
+silly resolved     _nodeVersion: 'v0.7.8',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '67d04d6a8793be9b7e0a29cc75453fe6ef505944' },
+silly resolved     _from: 'js2coffee' } ]
+info into /home/work/42qu-notepad js2coffee@0.2.0
+info installOne js2coffee@0.2.0
+verbose from cache /home/work/.npm/js2coffee/0.2.0/package/package.json
+info unbuild /home/work/42qu-notepad/node_modules/js2coffee
+verbose from cache /home/work/42qu-notepad/node_modules/js2coffee/package.json
+info preuninstall js2coffee@0.2.0
+info uninstall js2coffee@0.2.0
+verbose unbuild js2coffee@0.2.0 [ true,
+verbose unbuild js2coffee@0.2.0   '/home/work/42qu-notepad/node_modules',
+verbose unbuild js2coffee@0.2.0   '/home/work/42qu-notepad/node_modules' ]
+verbose binRoot [ '/home/work/42qu-notepad/node_modules/.bin',
+verbose binRoot   { js2coffee: './bin/js2coffee' } ]
+info unbuild /home/work/42qu-notepad/node_modules/js2coffee
+verbose caching /home/work/42qu-notepad/node_modules/js2coffee/package.json
+info preuninstall js2coffee@0.2.0
+info uninstall js2coffee@0.2.0
+verbose unbuild js2coffee@0.2.0 [ true,
+verbose unbuild js2coffee@0.2.0   '/home/work/42qu-notepad/node_modules',
+verbose unbuild js2coffee@0.2.0   '/home/work/42qu-notepad/node_modules' ]
+verbose binRoot [ '/home/work/42qu-notepad/node_modules/.bin',
+verbose binRoot   { js2coffee: './bin/js2coffee' } ]
+ERR! error rolling back js2coffee@0.2.0 Error: EACCES, unlink '/home/work/42qu-notepad/node_modules/.bin/js2coffee'
+ERR! Error: EACCES, unlink '/home/work/42qu-notepad/node_modules/.bin/js2coffee'
+ERR! 
+ERR! Please try running this command again as root/Administrator.
+ERR! 
+ERR! System Linux 3.3.7-gentoo
+ERR! command "node" "/bin/npm" "install" "js2coffee"
+ERR! cwd /home/work/42qu-notepad/js
+ERR! node -v v0.7.8
+ERR! npm -v 1.1.18
+ERR! path /home/work/42qu-notepad/node_modules/.bin/js2coffee
+ERR! code EACCES
+ERR! message EACCES, unlink '/home/work/42qu-notepad/node_modules/.bin/js2coffee'
+ERR! errno {}
+verbose exit [ 1, true ]

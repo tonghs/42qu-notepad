@@ -1,0 +1,89 @@
+<%inherit file="/_nav.html" />
+<%def name="html_title()">42qu . 记事本</%def>
+<%def name="html_head()">
+<link rel="stylesheet" href="${css.history}" type="text/css">
+<link rel="stylesheet" href="${css.help}" type="text/css">
+</%def>
+
+<div id="main">
+    <p>
+      42qu.cc 是在线的随手贴 <br> 可以随意的自定义网址来 自己记录 或与 朋友分享 文字 , 比如 :
+    </p>
+    <pre class="url">http://42qu.cc/test</pre>
+    ## <p>用Google帐号登录后 , 可以记录最近修改的文件<br>注 : 若登录出错 , 是因为服务器连接谷歌被墙 , 请多刷新</p>
+
+    <p class="mt27">为避免自定义的网址相互冲突 <br> 
+    建议您以自己的用户名作为网址前缀 , 比如 :</p>
+    <pre class="url">http://42qu.cc/zsp/test</pre>
+    <p>编辑内容的页面 , 每隔三秒会自动保存一次<br> 网页小图标 黑色 , 表示已保存 ; 灰色 , 表示待保存 
+    </p>
+
+
+
+    <p class="mt27">还有实用的命令行小工具 , Linux / Mac 用户可用以下指令安装</p>
+    <pre class="url">easy_install -U 42qucc</pre>
+
+    <p>粘贴文件 到 随机网址</p>
+    <pre class="url"> 42qucc &lt; hi.txt</pre>
+
+
+    <p>粘贴文件 到 自定义网址 ( http://42qu.cc/test )</p>
+    <pre class="url"> 42qucc test &lt; hi.txt</pre>
+
+    <p>列出当前目录下的文件 , 并粘贴到 42qu.cc</p>
+    <pre class="url"> ls | 42qucc</pre>
+
+    <p>手工输入 , 在命令行中输入内容 ; 按 Ctrl + D , 然后回车 , 结束输入</p>
+    <pre class="url">42qucc </pre>
+
+    <p>
+    下载文件 
+    </p>
+    <pre class="url">42qucc http://42qu.cc/hi &gt; hi.txt </pre>
+
+    <p><!--项目部署在 <a href="http://sae.sina.com.cn/" target="_blank">SAE</a> ;--> 源代码见 <a href="http://bitbucket.org/zuroc/42qu-notepad" target="_blank">bitbucket</a></p>
+    <p>诞生于 <a href="http://www.douban.com/event/17299206/" target="_blank">首届Python中国黑客马拉松</a> 比赛 , 获三等奖</p>
+    <p>创作团队来自 <a href="http://42qu.com" target="_blank">42qu.com</a> ; 分别是:<br/> 
+    <a href="http://zuroc.42qu.com/" target="_blank">张沈鹏</a>、
+    <a href="http://lerry.42qu.com/" target="_blank">吕大超</a>、
+    <a href="http://chenxu.42qu.com/" target="_blank">赵晨旭</a>、
+    <a href="http://yuanye.42qu.com/" target="_blank">葛原野</a><br/>
+    </p>
+    <p>现在由<a href="http://angelcrunch.com/" target="_blank">天使汇</a>主站开发团队来维护;</p>
+    <p>原项目部署在 <a href="http://sae.sina.com.cn/" target="_blank">SAE</a> , 现在稍作修改运行在云主机上 , 稍后可能会将修改后的代码开源到 GitHub 上</p>
+
+    <p class="mt27">此项目还有很多可以去细化的地方 </p><p>比如 浏览修改历史(已经记录 , 但是未展示) , 每日邮件汇总更变 , 设置密码, 利用tornado长连接传送diff做实时同步方便协同办公  , 自定义背景图和字体 , 定义错误提示页面并汇总出错信息 , 搜索自己的笔记 , 编写API文档 , 提供手机版 , 备份表结构的脚本 , 自动化部署到私人的SAE并写文档 , 移植url到kv数据库 等等</p>
+    <p>欢迎贡献代码</p>
+    ## <div class="mt27">
+    ##     <p><a href="http://42qu.com" target="_blank">42qu.com</a> 本身也<a href="https://bitbucket.org/zuroc/42qu" target="_blank">开源</a> </p>
+    ##     <p>如果您对参与开发感兴趣 , 欢迎邮件 42qu.hr@gmail.com </p>
+    ## </div>
+    <div class="mt27">
+        <p>最后 , 创意来自 <a target="_blank" href="http://notepad.cc/">notepad.cc</a> , 设计来自 <a href="http://orderedlist.com" target="_blank">orderedlist.com</a> </p>
+
+    <p>创作的初衷是为想学习python网站开发的新人提供一个演示项目</p>
+    <p>教程见 <a target="_blank" href="http://matrix.42qu.com/10734859">网站开发 . 漫游指南</a> , 其中代码对应的 changeset 是 <a href="https://bitbucket.org/zuroc/42qu-notepad/changesets/d8f73e1" target="_blank">d8f73e1</a> 
+
+        </p>
+    </div>
+
+    <div class="mt27">
+        <p> 附 : API 文档</p>
+        <p class="mt27">API 地址</p>
+        <pre class="url">http://42qu.cc/:api/txt/</pre>
+        <p class="mt27">录入笔记 : POST</p>
+        <p>使用上传文件的方式 , 上传一个文件名为txt , 经过bzip压缩的文本文件 </p>
+        <p>返回值为生成的随机网址 </p><p>如果想自定义网址 , 可以使用诸如 </p>
+        <pre class="url">http://42qu.cc/:api/txt/test1234</pre> 
+        <p>的API地址</p>
+
+        <p class="mt27">读取笔记 : GET</p>
+        <pre class="url">http://42qu.cc/:api/txt/test1234</pre>
+        <p>其中 , test1234 为自定义的网址 </p>
+        <p>返回纯文本 </p>
+        <p class="mt27">若对API有困惑 , 欢迎邮件 42qu-secret@googlegroups.com</p>
+    </div>
+</div>
+<div class="section nav">
+<p id="back" class="time back"></p>
+</div>

@@ -1,0 +1,15 @@
+<%inherit file="/_base.html" />
+<%def name="html_title()">42qu . 记事本</%def>
+<%def name="html_head()">
+<link rel="stylesheet" href="${css.index}" type="text/css">
+</%def>
+<div class="main_wrap">
+<div id="main">
+    <textarea id="txt">${txt}</textarea>
+    <div id="left">
+        <a class="more" href='/:'></a>
+    </div>
+</div>
+</div>
+<script src="${js.index}"></script>\
+
